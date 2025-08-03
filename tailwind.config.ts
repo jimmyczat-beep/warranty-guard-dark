@@ -52,16 +52,39 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
-				sidebar: {
-					DEFAULT: 'hsl(var(--sidebar-background))',
-					foreground: 'hsl(var(--sidebar-foreground))',
-					primary: 'hsl(var(--sidebar-primary))',
-					'primary-foreground': 'hsl(var(--sidebar-primary-foreground))',
-					accent: 'hsl(var(--sidebar-accent))',
-					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
-					border: 'hsl(var(--sidebar-border))',
-					ring: 'hsl(var(--sidebar-ring))'
+				category: {
+					electronics: 'hsl(var(--category-electronics))',
+					home: 'hsl(var(--category-home))',
+					automotive: 'hsl(var(--category-automotive))',
+					clothing: 'hsl(var(--category-clothing))',
+					food: 'hsl(var(--category-food))',
+					medical: 'hsl(var(--category-medical))',
+					other: 'hsl(var(--category-other))'
+				},
+				receipt: {
+					expired: 'hsl(var(--receipt-expired))',
+					expiring: 'hsl(var(--receipt-expiring))',
+					valid: 'hsl(var(--receipt-valid))'
 				}
+			},
+			backgroundImage: {
+				'gradient-primary': 'var(--gradient-primary)',
+				'gradient-card': 'var(--gradient-card)',
+				'gradient-fab': 'var(--gradient-fab)'
+			},
+			boxShadow: {
+				'card': 'var(--shadow-card)',
+				'fab': 'var(--shadow-fab)',
+				'receipt': 'var(--shadow-receipt)'
+			},
+			spacing: {
+				'header': 'var(--header-height)',
+				'tab': 'var(--tab-height)',
+				'fab': 'var(--fab-size)'
+			},
+			transitionTimingFunction: {
+				'smooth': 'cubic-bezier(0.4, 0, 0.2, 1)',
+				'bounce': 'cubic-bezier(0.68, -0.55, 0.265, 1.55)'
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
